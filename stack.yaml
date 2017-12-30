@@ -37,11 +37,10 @@ resolver: ghc-7.10.3
 # will not be run. This is useful for tweaking upstream packages.
 packages:
 - .
-
-extra-deps:
-- ./dep-one
-- git: https://github.com/kadoban/test-dep-two
-  commit: fbff976ba58f7c31c6338193acebed2e930c7be1
+- location: ./dep-one
+- location:
+    git: https://github.com/kadoban/test-dep-two
+    commit: fbff976ba58f7c31c6338193acebed2e930c7be1
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
